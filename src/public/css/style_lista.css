@@ -1,0 +1,73 @@
+    /* Background degradê mais claro */
+    body {
+        background: linear-gradient(135deg, #fff5f5, #fffafc); /* tons bem clarinhos */
+        min-height: 100vh;
+        font-family: 'Segoe UI', sans-serif;
+        animation: fadeIn 1s ease-in;
+    }
+
+    /* Keyframe fade-in */
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards */
+    .card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* sombra mais leve */
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #fffdfd; /* card bem clarinho */
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .form-section .card {
+        background: #fffafc;
+    }
+
+    .card-title {
+        font-weight: 700;
+        color: #b30000; /* vermelho mais suave para contraste */
+    }
+
+    .btn-primary {
+        background: #b30000;
+        border: none;
+        transition: background 0.3s;
+    }
+    .btn-primary:hover {
+        background: #ff6666;
+    }
+
+    .btn-warning {
+        background: #ffb74d;
+        border: none;
+        transition: background 0.3s;
+    }
+    .btn-warning:hover {
+        background: #ffa500;
+    }
+
+    .btn-danger {
+        background: #e53935;
+        border: none;
+        transition: background 0.3s;
+    }
+    .btn-danger:hover {
+        background: #ff6b6b;
+    }
+
+    h2 {
+        font-weight: 700;
+        color: #b30000;
+    }
+
+    .alert {
+        border-radius: 8px;
+        animation: fadeIn 0.5s ease-in;
+    }
